@@ -1,0 +1,11 @@
+\noindent\textbf{Text-Conditioned MIDI Music Generation with Transformer} \hfill \textit{May 2026}
+
+\noindent\textit{Decoder-only Transformer implementation from scratch}
+
+\begin{itemize}[leftmargin=0.18in,itemsep=1pt,topsep=2pt]
+\item Built a \textbf{decoder-only Transformer} with \textbf{multi-head self-attention}, trained from scratch (no high-level APIs) to generate MIDI event tokens.
+\item Implemented a \textbf{MIDI tokenizer} to convert musical events (NOTE_ON, NOTE_OFF, TIME_SHIFT) into discrete tokens and render generated sequences to WAV audio.
+\item Developed a \textbf{cross-attention mechanism} for text conditioning, enabling music generation guided by natural language prompts via two-phase fine-tuning.
+\item Optimized inference with \textbf{KV caching}, achieving \textbf{3x speedup} in autoregressive generation (9.3ms vs 27.4ms per token).
+\item \textbf{Exposure:} Python, PyTorch, Jupyter Notebook, Transformer Architecture, Attention Mechanisms, MIDI Processing, Autoregressive Generation \quad \href{https://github.com/BHK4321/music-generation-transformer}{\underline{Github Repository}}
+\end{itemize}
